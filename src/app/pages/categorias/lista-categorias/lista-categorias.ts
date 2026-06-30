@@ -35,12 +35,10 @@ export class ListaCategorias implements OnInit {
 
     this.categoryService.listarCategorias().subscribe({
 
-      next: (res: any) => {
-
-        this.categorias = res;
-        this.cdr.detectChanges();
-
-      },
+    next: (res: any) => {
+      this.categorias = res.slice(0, 5);
+      this.cdr.detectChanges();
+    },
 
       error: (err) => {
 
