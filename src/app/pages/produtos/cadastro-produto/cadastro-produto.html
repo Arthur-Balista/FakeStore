@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h1>Cadastrar Produto</h1>
+
+  <div class="form">
+
+    <label>Nome</label>
+    <input [(ngModel)]="produto.nome" (ngModelChange)="onChange()" />
+
+    <label>Preço</label>
+    <input [(ngModel)]="produto.preco" (ngModelChange)="onChange()" />
+
+    <button class="btn-save" (click)="salvar()">
+      Salvar Produto
+    </button>
+
+    <button class="btn-back" routerLink="/produtos">
+      Voltar
+    </button>
+
+  </div>
+
+</div>

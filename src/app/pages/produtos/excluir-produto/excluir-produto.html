@@ -1,0 +1,26 @@
+<div class="container">
+
+  <h1>Excluir Produto</h1>
+
+  <p>Tem certeza que deseja excluir este produto?</p>
+
+  <div class="card">
+
+    <p><b>Nome:</b> {{ produto.nome }}</p>
+    <p><b>Preço:</b> R$ {{ produto.preco }}</p>
+
+  </div>
+
+  <div class="actions">
+
+    <button class="btn-delete" (click)="excluir()">
+      Sim, excluir
+    </button>
+
+    <button class="btn-cancel" routerLink="/produtos">
+      Cancelar
+    </button>
+
+  </div>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h1>Editar Produto</h1>
+
+  <div class="form">
+
+    <label>Nome</label>
+    <input
+      type="text"
+      [(ngModel)]="produto.nome"
+      (ngModelChange)="onChange()"
+    />
+
+    <label>Preço</label>
+    <input
+      type="number"
+      [(ngModel)]="produto.preco"
+      (ngModelChange)="onChange()"
+    />
+
+    <button class="btn-save" (click)="salvar()">
+      Salvar Alterações
+    </button>
+
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="sidebar">
+
+  <h2>Fake Store</h2>
+
+  <nav>
+
+    <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Dashboard
+    </a>
+
+    <a routerLink="/produtos" routerLinkActive="active">
+      Produtos
+    </a>
+
+    <a routerLink="/categorias" routerLinkActive="active">
+      Categorias
+    </a>
+
+  </nav>
+
+  <button (click)="logout()">Sair</button>
+
+</div>

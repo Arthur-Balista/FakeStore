@@ -1,0 +1,47 @@
+<div class="container">
+
+    <div class="topo">
+
+        <h1>Categorias</h1>
+
+        <button class="novo" (click)="novaCategoria()">
+            + Nova Categoria
+        </button>
+
+    </div>
+
+    <input
+        type="text"
+        placeholder="Buscar categoria..."
+        [(ngModel)]="filtro"
+        class="search">
+
+    <div class="grid">
+
+        <div class="card" *ngFor="let c of categoriasFiltradas">
+
+            <img [src]="c.image">
+
+            <h2>{{c.name}}</h2>
+
+            <div class="acoes">
+
+                <button
+                    class="editar"
+                    (click)="editarCategoria(c)">
+                    Editar
+                </button>
+
+                <button
+                    class="excluir"
+                    (click)="excluirCategoria(c)">
+                    Excluir
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

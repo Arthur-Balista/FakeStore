@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div class="card">
+
+    <h2>Editar Categoria</h2>
+
+    <div class="campo">
+      <label for="nome">Nome da Categoria</label>
+
+      <input
+        id="nome"
+        type="text"
+        [(ngModel)]="categoria.name"
+        (ngModelChange)="alterado = true"
+        placeholder="Digite o nome da categoria">
+    </div>
+
+    <div class="campo">
+      <label for="imagem">URL da Imagem</label>
+
+      <input
+        id="imagem"
+        type="text"
+        [(ngModel)]="categoria.image"
+        (ngModelChange)="alterado = true"
+        placeholder="https://...">
+    </div>
+
+    <div class="botoes">
+
+      <button class="salvar" (click)="salvar()">
+        Salvar
+      </button>
+
+      <button class="cancelar" (click)="cancelar()">
+        Cancelar
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

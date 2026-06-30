@@ -1,0 +1,55 @@
+.login-container {
+  width: 320px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #125aa0;
+}
+
+.credenciais {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-left: 4px solid #1976d2;
+    border-radius: 6px;
+}
+
+.credenciais h3 {
+    margin: 0 0 10px 0;
+    color: #1976d2;
+    font-size: 18px;
+}
+
+.credenciais p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.credenciais strong {
+    color: #333;
+}

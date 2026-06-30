@@ -1,0 +1,33 @@
+<div class="login-container">
+
+  <h1>Fake Store</h1>
+
+  <div class="credenciais">
+
+  <h3>Credenciais de teste</h3>
+
+  <p><strong>E-mail:</strong> admin@mail.com</p>
+
+  <p><strong>Senha:</strong> admin123</p>
+
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="entrar()">
+
+    <input
+      type="email"
+      placeholder="Email"
+      formControlName="email">
+
+    <input
+      type="password"
+      placeholder="Senha"
+      formControlName="password">
+
+    <button type="submit">
+      Entrar
+    </button>
+
+  </form>
+
+</div>

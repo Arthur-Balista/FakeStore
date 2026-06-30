@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 500px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .2s;
+}
+
+.salvar {
+    background: #1976d2;
+    color: white;
+}
+
+.salvar:hover {
+    background: #1565c0;
+}
+
+.cancelar {
+    background: #e53935;
+    color: white;
+}
+
+.cancelar:hover {
+    background: #c62828;
+}
