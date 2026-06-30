@@ -28,10 +28,16 @@ export class ListaProdutos implements OnInit {
   carregarProdutos() {
     this.productService.listarProdutos().subscribe({
       next: (res: any) => {
-        this.produtos = res;
 
-        this.cdr.detectChanges();
-      },
+    this.produtos = res.filter((p: any) =>
+      p.id <= 50 &&
+      p.images &&
+      p.images.length > 0
+    );
+
+  this.cdr.detectChanges();
+
+},
       error: (err) => {
         console.error('🔴 erro ao carregar produtos:', err);
       }
